@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Cultural Awareness App</string>
+
+    <string-array name="main_menu">
+        <item>Quiz</item>
+        <item>Learn</item>
+        <item>Contribute</item>
+        <item>About Us</item>
+        <item>Help</item>
+    </string-array>
+    <string-array name="quiz_menu">
+        <item>Asian</item>
+        <item>American</item>
+        <item>Latin</item>
+        <item>European</item>
+        <item>African</item>
+        <item>Caribean</item>
+    </string-array>
+    <dimen name="text_size">20dp</dimen>
+    <dimen name="margin">20dp</dimen>
+</resources>
+
+
