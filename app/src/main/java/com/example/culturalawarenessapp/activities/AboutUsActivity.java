@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.culturalawarenessapp.R;
-
+/*
+       Author : Rushabh Picha
+ */
 public class AboutUsActivity extends AppCompatActivity {
 
     @Override

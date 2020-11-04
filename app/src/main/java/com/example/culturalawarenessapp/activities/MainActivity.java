@@ -1,8 +1,6 @@
 package com.example.culturalawarenessapp.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,10 +8,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Switch;
 
 import com.example.culturalawarenessapp.R;
-
+/*
+    Author : Rushabh Picha
+ */
 public class MainActivity extends AppCompatActivity {
 
     ListView listView;
@@ -23,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         listView = findViewById(R.id.listview);
         listItem = getResources().getStringArray(R.array.main_menu);
@@ -40,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
             {
                 switch(position){
                     case 0:
-                        Intent quiz = new Intent(MainActivity.this, QuizActivity.class);
+                        Intent quiz = new Intent(MainActivity.this, QuizMainActivity.class);
                         startActivity(quiz);
                         break;
                     case 1:
-                        Intent learn = new Intent(MainActivity.this, LearnActivity.class);
+                        Intent learn = new Intent(MainActivity.this, LearnMainActivity.class);
                         startActivity(learn);
                         break;
                     case 2:
@@ -52,16 +50,15 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(contribute);
                         break;
                     case 3:
-                        Intent help = new Intent(MainActivity.this, LearnActivity.class);
-                        startActivity(help);
-                        break;
-                    case 4:
                         Intent about_us = new Intent(MainActivity.this, AboutUsActivity.class);
                         startActivity(about_us);
+                        break;
+                    case 4:
+                        Intent help = new Intent(MainActivity.this, HelpActivity.class);
+                        startActivity(help);
                         break;
                 }
             }
         });
-
     }
 }

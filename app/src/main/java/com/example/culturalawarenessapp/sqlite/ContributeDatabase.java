@@ -16,6 +16,9 @@ import com.example.culturalawarenessapp.activities.ContributeActivity;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+        Rushabh Picha
+ */
 public class ContributeDatabase extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "culturalawarenessapp.db";
     public static final String TABLE_NAME = "contribute";

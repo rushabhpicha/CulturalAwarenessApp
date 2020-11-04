@@ -63,6 +63,20 @@ public class QuizMainActivity extends AppCompatActivity {
             }
         });
     }
+    // onActivityResult is called back when user wants to come back to this activity
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode  , resultCode, data);
+
+        if (requestCode == REQUEST_CODE_QUIZ) {
+            if(resultCode == RESULT_OK) {
+                int score = data.getIntExtra(QuizActivity.EXTRA_SCORE, 0);
+                if(score > highScore) {
+                    updateHighScore(score);
+                }
+            }
+        }
+    }
 
     /*
         This method takes the category and the difficulty level that the user enters and pass it onto the next

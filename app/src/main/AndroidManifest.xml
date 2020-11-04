@@ -9,12 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.AboutUsActivity"></activity>
-        <activity android:name=".activities.HelpActivity" />
-        <activity android:name=".activities.ContributeActivity"
-                  android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".activities.LearnActivity" />
+        <activity android:name=".activities.LearnActivity"></activity>
         <activity android:name=".activities.QuizActivity" />
+        <activity android:name=".activities.AboutUsActivity" />
+        <activity android:name=".activities.HelpActivity" />
+        <activity
+            android:name=".activities.ContributeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.LearnMainActivity" />
+        <activity android:name=".activities.QuizMainActivity" />
         <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
