@@ -3,10 +3,12 @@
 
     <string-array name="main_menu">
         <item>Quiz</item>
-        <item>Learn</item>
+        <item>Explore Cultures</item>
         <item>Contribute</item>
+        <item>Cultural Model And Dimensions</item>
+        <item>Diversity Inclusion And Equity(DEI)</item>
         <item>About Us</item>
-        <item>Help</item>
+        <item>Feedback</item>
     </string-array>
     <string-array name="quiz_menu">
         <item>Asian</item>
@@ -16,7 +18,21 @@
         <item>African</item>
         <item>Caribean</item>
     </string-array>
-    <dimen name="text_size">20dp</dimen>
+    <string-array name = "cultural_dimensions_model_menu">
+        <item>Environment</item>
+        <item>Time</item>
+        <item>Action</item>
+        <item>Communication</item>
+        <item>Space</item>
+        <item>Power</item>
+        <item>Individualism</item>
+        <item>Competitiveness</item>
+        <item>Structure</item>
+        <item>Thinking</item>
+    </string-array>
+    <dimen name="text_size_20dp">20dp</dimen>
+    <dimen name="text_size_18dp">18dp</dimen>
+
     <dimen name="margin">20dp</dimen>
 
     <string name="select_difficulty">Select Difficulty</string>
@@ -27,6 +43,7 @@
     <string name="tv_question_text">Question: 1/x</string>
     <string name="btn_confirm_text">Confirm</string>
     <string name="difficulty_hard">Difficulty : Hard</string>
+    <string name="about_us_info">Welcome to the Emerging Technologies and application Lab"\n\n\n"Dr. Fadi Muehidat"\n"School of Computer Science and Engineering"\n"Cal State University San Bernardino </string>
 </resources>
 
 
