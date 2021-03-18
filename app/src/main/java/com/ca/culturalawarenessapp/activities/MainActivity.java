@@ -52,30 +52,30 @@ public class MainActivity extends AppCompatActivity {
                                     long arg3)
             {
                 switch(position){
-                    case 0:
+                    case 1:
                         Intent quiz = new Intent(MainActivity.this, QuizMainActivity.class);
                         startActivity(quiz);
                         break;
-                    case 1:
+                    case 0:
                         Intent learn = new Intent(MainActivity.this, LearnMainActivity.class);
                         startActivity(learn);
                         break;
+//                    case 2:
+//                        Intent contribute = new Intent(MainActivity.this, ContributeActivity.class);
+//                        startActivity(contribute);
+//                        break;
                     case 2:
-                        Intent contribute = new Intent(MainActivity.this, ContributeActivity.class);
-                        startActivity(contribute);
-                        break;
-                    case 3:
                         Intent culturalModelAndDimensions = new Intent(MainActivity.this, CulturalModelDimensions.class);
                         startActivity(culturalModelAndDimensions);
                         break;
-                    case 4:
+                    case 3:
                         Intent diversityInclusionEquity = new Intent(MainActivity.this, DiversityInclusionEquity.class);
                         startActivity(diversityInclusionEquity);
                         break;
-                    case 5:
+                    case 6:
                         openAboutUsDialog();
                         break;
-                    case 6:
+                    case 5:
                         Intent help = new Intent(MainActivity.this, FeedbackActivity.class);
                         startActivity(help);
                         break;
