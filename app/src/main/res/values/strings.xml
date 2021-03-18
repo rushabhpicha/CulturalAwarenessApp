@@ -2,13 +2,12 @@
     <string name="app_name">Cultural Awareness App</string>
 
     <string-array name="main_menu">
-        <item>Quiz</item>
         <item>Explore Cultures</item>
-        <item>Contribute</item>
+        <item>Check Your Knowledge</item>
         <item>Cultural Model And Dimensions</item>
         <item>Diversity Inclusion And Equity(DEI)</item>
-        <item>About Us</item>
         <item>Feedback</item>
+        <item>About Us</item>
     </string-array>
     <string-array name="quiz_menu">
         <item>Asian</item>
