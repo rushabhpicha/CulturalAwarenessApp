@@ -59,7 +59,7 @@ public class CulturalModelDimensions extends AppCompatActivity {
     private String actionModuleInfo = "How individuals view actions and interactions? Doing / Being\n" +
             "(1) Doing: Task-driven. Performance is measured against set standards and rewarded.\n" +
             ". ;:)+ (2) Being: Relationship-driven. Affiliation, character, personal quality, and relationship\n" +
-            "~,<>- are valued. \"Getting to know each other.\" ";
+            "are valued. \"Getting to know each other.\" ";
 
     private String actionModuleString = "North America (U.S.A. and canada)\n "+bullet+" Doing\n\n" +
             " Latin America\n "+bullet+" Being " +
@@ -119,7 +119,7 @@ public class CulturalModelDimensions extends AppCompatActivity {
             "Eastern Europe\n "+bullet+" Collectivist\n "+bullet+" Particularistic \n\n " +
             "Middle East\n "+bullet+" Collectivist\n "+bullet+" Particularistic \n\n ";
 
-    private String CompetitivenessModuleInfo = "How individuals are motivated?\n" +
+    private String competitivenessModuleInfo = "How individuals are motivated?\n" +
             "Competitive Cultures / Cooperative Cultures ( I ) Competitive Cultures: value competition for resources for material success ( the\n" +
             "acquisition and accumulation of wealth, property, goods, fame, expertise, and others)\n" +
             "and value ambition, assertiveness, initiative, performance, and excellence.\n" +

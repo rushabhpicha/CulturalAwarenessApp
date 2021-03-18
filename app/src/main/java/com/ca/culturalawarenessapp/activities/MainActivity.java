@@ -72,10 +72,10 @@ public class MainActivity extends AppCompatActivity {
                         Intent diversityInclusionEquity = new Intent(MainActivity.this, DiversityInclusionEquity.class);
                         startActivity(diversityInclusionEquity);
                         break;
-                    case 6:
+                    case 5:
                         openAboutUsDialog();
                         break;
-                    case 5:
+                    case 4:
                         Intent help = new Intent(MainActivity.this, FeedbackActivity.class);
                         startActivity(help);
                         break;
