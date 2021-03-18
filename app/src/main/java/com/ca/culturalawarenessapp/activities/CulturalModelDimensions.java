@@ -20,6 +20,13 @@ public class CulturalModelDimensions extends AppCompatActivity {
     String[] listItem;
     ArrayAdapter<String> adapter;
     String bullet = "\u2022";
+    private String environmentInfo = "Environment: Can individuals and groups can shape their own destiny?\n" +
+            "Control Orientation / Harmony Orientation / Constraint Orientation\n\n" +
+            "(1) Control Orientation: Individuals and groups can shape their own destiny.\n" +
+            "(2) Harmony Orientation: People are an integral part of the social environment.\n" +
+            "Harmonious relations with the world and with others are important.\n" +
+            "(3) Constraint Orientation: Events ae determined by external forces (chance, luck, or" +
+            "supernatural forces) \n\n";
     private String environmentModuleString = "North America (U.S.A. and canada)\n "+bullet+" Control (Can-do attitue)\n\n" +
             " Latin America\n "+bullet+" Constraint " +
             "Asia\n "+bullet+" Harmony & Constraint\n\n" +
@@ -142,7 +149,7 @@ public class CulturalModelDimensions extends AppCompatActivity {
     }
 
     private void environmentModule() {
-        openAlertDialog(environmentModuleString, "Environment");
+        openAlertDialog(environmentInfo + environmentModuleString, "Environment");
     }
 
     private void timeModule() {
