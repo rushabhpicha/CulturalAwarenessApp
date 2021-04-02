@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         listView = findViewById(R.id.listview);
         listItem = getResources().getStringArray(R.array.main_menu);
         adapter = new ArrayAdapter<String>(MainActivity.this,
-                R.layout.list_item_activity_main, R.id.textview, listItem);
+                R.layout.list_item_activity_main, R.id.button, listItem);
         listView.setAdapter(adapter);
         /*
 

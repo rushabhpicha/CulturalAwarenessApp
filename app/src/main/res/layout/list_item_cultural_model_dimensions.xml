@@ -23,11 +23,11 @@
             android:layout_height="match_parent"
             android:id="@+id/textview"
             android:textSize="@dimen/text_size_18dp"
-            android:textColor="@color/colorPrimary"
-            android:layout_margin="@dimen/margin"
+            android:textColor="@color/colorWhite"
             android:layout_gravity="center"
             android:gravity="center"
-            android:fontFamily="sans-serif"/>
+            android:fontFamily="sans-serif"
+            android:background="@drawable/custom_button"/>
 
     </androidx.cardview.widget.CardView>
 </LinearLayout>

@@ -30,7 +30,7 @@ public class LearnMainActivity extends AppCompatActivity {
         learnDbHelper = LearnDbHelper.getInstance(LearnMainActivity.this);
         listItem = learnDbHelper.getCultureNames();
         adapter = new ArrayAdapter<String>(LearnMainActivity.this,
-                R.layout.list_item_activity_main, R.id.textview, listItem);
+                R.layout.list_item_activity_main, R.id.button, listItem);
         listView.setAdapter(adapter);
 
         // Main Menu of the app, which gives the direction to the user to access the app further.

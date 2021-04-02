@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity">
+    tools:context=".activities.MainActivity"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false">
 
     <ListView
         android:layout_width="match_parent"
@@ -15,7 +17,10 @@
         app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/listview"
         android:divider="@null"
-        android:background="#c0c0c0"/>
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
