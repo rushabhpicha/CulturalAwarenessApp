@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class LearnDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "Info.db";
-    public static final int DATABASE_VERSION = 2;
+    public static final int DATABASE_VERSION = 5;
     public final String TABLE_NAME = "LEARN_TABLE";
     private static LearnDbHelper instance;
     private String id = "id";
@@ -51,7 +51,7 @@ public class LearnDbHelper extends SQLiteOpenHelper {
     }
 
     private void fillValues() {
-        LearnDataModel info1 = new LearnDataModel(1, "Asian", "lkslkflsdkfjfk");
+        LearnDataModel info1 = new LearnDataModel(1, "Asian", "Asians tend to be highly group-oriented people who place a strong emphasis on family connection as the major source of identity and protection against the hardships of life.");
         insertInfo(info1);
     }
 
@@ -65,7 +65,8 @@ public class LearnDbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        
+        db.execSQL("DROP TABLE IF EXISTS '" + TABLE_NAME + "'");
+        onCreate(db);
     }
     public boolean insertData(String culture_name, String culture_description) {
         // create an instance of SQLiteDatabase to convert it into writable mode

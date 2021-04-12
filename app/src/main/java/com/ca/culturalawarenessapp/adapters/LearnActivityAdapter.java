@@ -41,7 +41,7 @@ public class LearnActivityAdapter extends RecyclerView.Adapter<LearnActivityAdap
     public void onBindViewHolder(@NonNull ListViewHolder holder, int position) {
         LearnDataModel learnDataModel = learnDataModels.get(position);
         System.out.println("Culture Info" +learnDataModel.getInfo());
-        holder.info.setText(learnDataModel.getInfo());
+        holder.info.setText("• " +learnDataModel.getInfo());
     }
 
     @Override
