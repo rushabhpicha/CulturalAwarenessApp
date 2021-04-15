@@ -29,6 +29,13 @@
         <item>Structure</item>
         <item>Thinking</item>
     </string-array>
+    <string-array name="diversityItems">
+        <item>Diversity</item>
+        <item>Inclusion</item>
+        <item>Equity</item>
+        <item>Cultural</item>
+        <item>Cultural Competance</item>
+    </string-array>
     <dimen name="text_size_20dp">20dp</dimen>
     <dimen name="text_size_18dp">18dp</dimen>
 
@@ -42,7 +49,7 @@
     <string name="tv_question_text">Question: 1/x</string>
     <string name="btn_confirm_text">Confirm</string>
     <string name="difficulty_hard">Difficulty : Hard</string>
-    <string name="about_us_info">Welcome to the Emerging Technologies and application Lab"\n\n\n"Dr. Fadi Muehidat"\n"School of Computer Science and Engineering"\n"Cal State University San Bernardino </string>
+    <string name="about_us_info">Welcome to the Emerging Technologies and application Lab"\n\n\n"Dr. Fadi Muheidat"\n"School of Computer Science and Engineering"\n"Cal State University San Bernardino </string>
 </resources>
 
 

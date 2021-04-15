@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class LearnDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "Info.db";
-    public static final int DATABASE_VERSION = 5;
+    public static final int DATABASE_VERSION = 7;
     public final String TABLE_NAME = "LEARN_TABLE";
     private static LearnDbHelper instance;
     private String id = "id";
@@ -52,7 +52,10 @@ public class LearnDbHelper extends SQLiteOpenHelper {
 
     private void fillValues() {
         LearnDataModel info1 = new LearnDataModel(1, "Asian", "Asians tend to be highly group-oriented people who place a strong emphasis on family connection as the major source of identity and protection against the hardships of life.");
+        //LearnDataModel info2 = new LearnDataModel(1, "Asian", "The culture of Asia encompasses the collective and diverse customs and traditions of art, architecture, music, literature, lifestyle, philosophy, politics and religion that have been practiced and maintained by the numerous ethnic groups of the continent of Asia since prehistory.");
+
         insertInfo(info1);
+        //insertInfo(info2);
     }
 
     private void insertInfo(LearnDataModel learnDataModel) {
@@ -113,6 +116,12 @@ public class LearnDbHelper extends SQLiteOpenHelper {
             String cultureName = cursor.getString(cursor.getColumnIndex(name));
             cultureLists.add(cultureName);
         }
+        cultureLists.add("American");
+        cultureLists.add("Latino");
+        cultureLists.add("European");
+        cultureLists.add("CSUSB culture");
+        cultureLists.add("African");
+
         return cultureLists;
     }
 }
